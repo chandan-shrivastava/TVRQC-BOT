@@ -16,6 +16,8 @@ import convertapi
 owners = [
     482849624030314525
 ]
+answerlog=int(890126023251882034)
+markslog=int(890335796383604777)
 # https://discordapp.com/oauth2/authorize?&client_id=881932098993270784&scope=bot&permissions=8
 ################################################################################################################################
 ################################################################################################################################
@@ -167,7 +169,7 @@ class general(commands.Cog, name="general"):
         datetime_ist = datetime.now(IST)
         curr_clock=datetime_ist.strftime('%H:%M:%S')
         channel1=context.message.channel.name
-        channel = self.bot.get_channel(890126023251882034)
+        channel = self.bot.get_channel(answerlog)
         channel2=channel1+"-answer"
         db[channel2]=args
         embed1 = discord.Embed(
@@ -197,7 +199,7 @@ class general(commands.Cog, name="general"):
         IST = pytz.timezone('Asia/Kolkata')
         datetime_ist = datetime.now(IST)
         curr_clock=datetime_ist.strftime('%H:%M:%S')
-        channel = self.bot.get_channel(890126023251882034)
+        channel = self.bot.get_channel(answerlog)
         size = len(context.message.channel.name)
         nextteam=context.message.channel.name[size-1]
         nextteam=int(nextteam)
@@ -778,7 +780,7 @@ class owner(commands.Cog, name="owner"):
                     value="10",
                     inline=True
                     )
-                channel2 = self.bot.get_channel(890335796383604777)
+                channel2 = self.bot.get_channel(markslog)
                 await channel2.send(embed=embed2)
                 await inter.reply("Successfull")
             db["team-1-answer"] = 0

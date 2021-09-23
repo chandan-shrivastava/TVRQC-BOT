@@ -3,3 +3,4 @@ asyncio
 discord.py
 pythonnet
 -U discord-py-interactions
+dislash.py
