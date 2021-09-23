@@ -1,0 +1,5 @@
+aiohttp
+asyncio
+discord.py
+pythonnet
+-U discord-py-interactions
