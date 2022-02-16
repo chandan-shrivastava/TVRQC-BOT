@@ -52,4 +52,4 @@ Feel free to make a PR/issue for feature implementation/request.
 1. !next - Sends next slide
 2. !prev - Sends prev slide
 3. Convert every command to slash
-4. Add more try except blocks 
+4. Add more try except blocks
